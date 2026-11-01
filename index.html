@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Survivor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✦</span><div><b>NEON</b><small>SURVIVOR</small></div></div>
+      <div class="stats">
+        <div class="stat"><small>SCORE</small><strong id="score">0000</strong></div>
+        <div class="stat"><small>BEST</small><strong id="best">0000</strong></div>
+        <div class="stat"><small>SHIELDS</small><strong id="lives">♥ ♥ ♥</strong></div>
+      </div>
+    </header>
+
+    <section class="game-card">
+      <div class="game-heading">
+        <div><span class="eyebrow">ARCADE MODE / 01</span><h1>Survive the <em>glow.</em></h1>
+        <p>Collect energy. Dodge the glitch bots. How long can you last?</p></div>
+        <div class="level-pill"><span class="pulse"></span> LIVE ARENA</div>
+      </div>
+      <div class="canvas-wrap">
+        <canvas id="game" width="900" height="520" aria-label="Neon Survivor game area"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-box">
+            <div class="big-symbol">✦</div>
+            <span class="eyebrow">READY PLAYER ONE?</span>
+            <h2 id="overlay-title">Enter the arena</h2>
+            <p id="overlay-text">Move with WASD or arrow keys. Collect the glowing orbs and avoid the red glitch bots.</p>
+            <button id="start-btn">START GAME <span>→</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-row">
+        <div class="controls"><span class="key">W</span><span class="key">A</span><span class="key">S</span><span class="key">D</span><span class="or">or</span><span class="key wide">↑</span><span class="key">←</span><span class="key">↓</span><span class="key">→</span><span class="hint">to move</span></div>
+        <div class="tip">✧ <span>TIP:</span> Keep moving to stay alive!</div>
+      </div>
+    </section>
+    <footer><span>NEON SURVIVOR</span><span>BUILT FOR THE BRAVE <b>✦</b></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
